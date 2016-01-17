@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<html>
+    <head>
+		<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<title>MuniciPAL</title>
+		
+    </head>
+    <body>
+	
+        <div class="page-header">
+            <h1>MuniciPAL</h1>
+			<h3> On Saturday, Trump drew boos from a grassroots conservative crowd during remarks at the South Carolina Tea Party Coalition Convention for his attack on Cruz's previously undisclosed loans.
+
+"You give a campaign contribution to Ted Cruz, you get whatever the hell you want," he said, before boos erupted from the crowd.
+
+Trump went on as the boos grew louder: "Say whatever you want, it's okay, he didn't report his bank loans. He's got bank loans from Goldman Sachs, he's got bank loans from Citibank, folks, and then he acts like Robin Hood?"</h3>
+        </div>
+
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h1><u>{{ post.title }}</u></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

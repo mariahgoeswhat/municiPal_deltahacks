@@ -1,0 +1,22 @@
+body {
+    background-color: #dfe2db;
+}
+h1 {
+	text-align: center;
+	font-size: 350%;
+	color: #191919;
+	font-family: 'Open Sans';
+}
+h2 {
+	color: #191919;
+	font-family: 'Open Sans';
+}
+h3 {
+	color: #191919;
+	text-align: justified;
+	font-family: 'Lora';
+}
+h4 {
+	color: #b468ff;
+	font-family: 'Poiret One';
+}
